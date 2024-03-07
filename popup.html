@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shortenIt</title>
+    <link rel="stylesheet" href="spectre.min.css">
+    <style>
+        body{
+            width: max-content;
+        }
+    </style>
+
+    <script defer src="popup.js"></script>
+    <!-- we used defer here so that after our html runs then we run our js file -->
+   
+
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-header">
+            <div class="toast toast-error d-hide">
+               Please enter valid URL
+              </div>
+            <div class="card-title ">Url Shortner</div>
+            <div class="card-subtitle text-gray">URL of your current</div>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <input class="form-input" type="text" id="myURL" >
+            </div>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-primary" id="shortURL">Generate short URL</button>
+            <button class="btn btn-info d-hide" id="copyURL">Copy URL</button>
+            <div class="toast toast-success d-hide" > 
+               </div>
+              
+        </div>
+    
+    </div>
+
+   
+</body>
+
+</html>
